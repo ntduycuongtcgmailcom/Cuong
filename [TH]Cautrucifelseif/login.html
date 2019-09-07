@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ten = prompt("Nhap ten");
+        if (ten === "Admin") {
+            let mk = prompt("Nhap mat khau");
+            if (mk === "TheMaster") {
+                alert("Welcome");
+            }
+                else if (mk === "") {
+                    alert("Canceled");
+                }
+                else {alert("Wrong Password");}
+        }
+        else if(ten===""){
+            alert("canceld");
+        }
+        else {alert("I don't know you");}
+    </script>
+</body>
+
+</html>
