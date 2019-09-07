@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="SoA"></input>
+    <input type="button" onclick="DemNgay()" value="Tinh so ngay"></input>
+    <p id=" ketqua"></p>
+    <script>
+        function DemNgay() {
+            let kq;
+            let b = document.getElementById("ketqua");
+            let a = document.getElementById("SoA").value;
+            switch (a) {
+                case "1":
+                case "3":
+                case "5":
+                case "7":
+                case "9":
+                case "11": alert("Thang nay co 31 ngay"); break;
+                case "2": alert("Thang 2 co 28 hoac 29 ngay"); break;
+                case "4":
+                case "6":
+                case "8":
+                case "10":
+                case "12": alert("Thang nay co 30 ngay"); break;
+            }
+            b.innerHTML = kq;
+        }
+
+    </script>
+</body>
+
+</html>
