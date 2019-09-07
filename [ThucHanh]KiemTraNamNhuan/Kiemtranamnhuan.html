@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let x = +prompt("Nhap nam: ");
+        if (x % 4 === 0) {
+            if (x % 100 === 0) {
+                if (x % 400 === 0) {
+                    document.getElementById("demo1").innerHTML = x + "la nam nhuan";
+                }
+                else {
+                    alert(x + "khong phai la nam nhuan");
+                }
+            }
+            else {
+                alert(x + "la nam nhuan");
+            }
+        }
+        else {
+            document.getElementById("demo2").innerHTML = x + "khong la nam nhuan";
+        }
+    </script>
+</body>
+
+</html>

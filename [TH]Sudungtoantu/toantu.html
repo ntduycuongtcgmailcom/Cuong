@@ -8,13 +8,11 @@
 </head>
 <body>
     <script>
-        let inputwidth; 
         let inputheight; 
-        inputwidth = prompt("enter the width");
+        let inputwidth =  +prompt("enter the width");
         inputheight = prompt("enter the height");
-        let width = parseInt(inputwidth);
         let height = parseInt(inputheight);
-        let area = width * height;
+        let area = inputwidth * height;
         document.write("The area is: " + area);
         </script>
 </body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+    <h1>Caculator</h1>
+
+    <input type="text" name="display" id="mot">
+    <tr>
+        <input type="text" name="display" id="hai"> </t<tr>d>
+    <tr>
+
+        <input type="button" onclick=" Tinh(0)" value="Addition (+)">
+    <tr>;
+        <input type="button" onclick=" Tinh(1)" value="Subtraction (-)">
+    <tr>
+        <input type="button" onclick=" Tinh(2)" value="Multiplication (X)">
+    <tr>
+        <input type="button" onclick=" Tinh(3)" value="Division (/)">
+    <tr>
+    <tr>
+        </table>
+        <p id="ketqua"></p>
+        </form>
+        <script>
+            let kq;
+            
+               
+            function Tinh(c) {
+                
+            var a = document.getElementById("mot").value;
+                var b = document.getElementById("hai").value;
+                a = parseInt(a);
+                b = parseInt(b);
+
+                var x = document.getElementById("ketqua");
+
+                //     if (c=="0"){
+                //     var kq = a + b;
+                //     x.innerHTML = kq;
+                //     }
+                //     if (c=="1"){
+                //     var kq = a - b;
+                //     x.innerHTML = kq;
+                //     }
+                //     if (c=="2"){
+                //     var kq = a * b;
+                //    x.innerHTML = kq;
+                //     }
+                //     if (c=="3"){
+                //     var kq = a / b;
+                //     x.innerHTML = kq;
+                //     }
+
+                // }
+                switch (c) {
+                    case 0:
+                        kq = a + b;
+                        break;
+
+                    case 1: kq = a - b;
+                        break;
+
+                    case 2: kq = a * b;
+                        break;
+
+                    case 3: kq = a / b;
+                        break;
+
+                }
+                x.innerHTML = kq;
+            }
+        </script>
+</body>
+
+</html>
