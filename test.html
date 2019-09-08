@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    #_Q0_C1 {
+        position: absolute;
+      }
+      </style>
 </head>
+
+
 <body>
-    <p> click the button to display the date </p>
-    <button onclick=" HienThi()"> the button is </button>
-    <p id="ketqua"></p>
-    <script>
-         var x =document.getElementById("ketqua");
-        function HienThi() {
-           
-        x.innerHTML=Date();
+    <h2>Xiu co Yeu Cuong han <3 </h2>
+        <img id="myImage" src="anh1.jpg" />
+    <button type="button" onclick="myFun(1)">Có</button>
+    <button position: absolute id="_Q0_C1" type="button"onmouseover="myFun(2)">NO</button>
+<script>
+function myFun(a){
+    c= Math.floor(Math.random() * (window.innerHeight - 1 + 1) ) + 1;
+    b= Math.floor(Math.random() * (window.innerWidth - 1 + 1) ) + 1;
+    if (a==1){
+        alert("Yêu Cường là đúng rồi,haha");
     }
+    else if(a==2) {
+       
+     b=b+"px"
     
-    </script>
+     c=c+"px"
+   
+        document.getElementById("_Q0_C1").style.left = b;
+        document.getElementById("_Q0_C1").style.top = c;
+    }
+}
+</script>
 </body>
 </html>
