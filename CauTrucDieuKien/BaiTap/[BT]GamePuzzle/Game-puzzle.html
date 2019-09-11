@@ -10,73 +10,73 @@
 
 <body>
     <p id="demo" style="position:absolute;left:500px; top:200px;"> </p>
-    <img id="bac1" src="H1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
+    <img id="h1" src="H1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
         onclick="myFun(5)">
-    <img id="bac2" src="H2.png" style="position:absolute;left:0; top:200px;" height="200px" width="500px"
+    <img id="h2" src="H2.png" style="position:absolute;left:0; top:200px;" height="200px" width="500px"
         onclick="myFun(6)">
-    <img id="bac3" src="H3.png" style="position:absolute;left:0; top:400px;" height="200px" width="500px"
+    <img id="h3" src="H3.png" style="position:absolute;left:0; top:400px;" height="200px" width="500px"
         onclick="myFun(7)">
-    <img id="bac4" src="H4.png" style="position:absolute;left:0; top:600px;" height="200px" width="500px"
+    <img id="h4" src="H4.png" style="position:absolute;left:0; top:600px;" height="200px" width="500px"
         onclick="myFun(8)">
-    <img id="dNuoc1" src="V1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
+    <img id="v1" src="V1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
         onclick="myFun(1)">
 
-    <img id="dNuoc2" src="V2.png " style="position:absolute;left:0; top:200px;" height="200px" width="500px"
+    <img id="v2" src="V2.png " style="position:absolute;left:0; top:200px;" height="200px" width="500px"
         onclick="myFun(2)">
-    <img id="dNuoc3" src="V3.png " style="position:absolute;left:0; top:400px;" height="200px" width="500px"
+    <img id="v3" src="V3.png " style="position:absolute;left:0; top:400px;" height="200px" width="500px"
         onclick="myFun(3)">
-    <img id="dNuoc4" src="V4.png " style="position:absolute;left:0; top:600px;" height="200px" width="500px"
+    <img id="v4" src="V4.png " style="position:absolute;left:0; top:600px;" height="200px" width="500px"
         onclick="myFun(4)">
     <script>
 
-        let c1 = document.getElementById("dNuoc1")
-        let c2 = document.getElementById("dNuoc2")
-        let c3 = document.getElementById("dNuoc3")
-        let c4 = document.getElementById("dNuoc4")
-        let d1 = document.getElementById("bac1")
-        let d2 = document.getElementById("bac2")
-        let d3 = document.getElementById("bac3")
-        let d4 = document.getElementById("bac4")
+        let c1 = document.getElementById("v1")
+        let c2 = document.getElementById("v2")
+        let c3 = document.getElementById("v3")
+        let c4 = document.getElementById("v4")
+        let d1 = document.getElementById("h1")
+        let d2 = document.getElementById("h2")
+        let d3 = document.getElementById("h3")
+        let d4 = document.getElementById("h4")
         function myFun(a) {
 
             switch (a) {
-                case 1: document.getElementById("dNuoc1").style.display = 'none';
-                    document.getElementById("bac1").style.display = 'block';
+                case 1: document.getElementById("v1").style.display = 'none';
+                    document.getElementById("h1").style.display = 'block';
                     c1.value = "1"
                     d1.value = 0;
                     break;
-                case 2: document.getElementById("dNuoc2").style.display = 'none';
-                    document.getElementById("bac2").style.display = 'block';
+                case 2: document.getElementById("v2").style.display = 'none';
+                    document.getElementById("h2").style.display = 'block';
                     c2.value = "2"
                     d2.value = 0;
                     break;
-                case 3: document.getElementById("dNuoc3").style.display = 'none';
-                    document.getElementById("bac3").style.display = 'block';
+                case 3: document.getElementById("v3").style.display = 'none';
+                    document.getElementById("h3").style.display = 'block';
                     c3.value = "3"
                     d3.value = 0;
                     break;
-                case 4: document.getElementById("dNuoc4").style.display = 'none';
-                    document.getElementById("bac4").style.display = 'block';
+                case 4: document.getElementById("v4").style.display = 'none';
+                    document.getElementById("h4").style.display = 'block';
                     c4.value = "4"
                     d4.value = 0;
                     break;
-                case 5: document.getElementById("bac1").style.display = 'none';
-                    document.getElementById("dNuoc1").style.display = 'block';
+                case 5: document.getElementById("h1").style.display = 'none';
+                    document.getElementById("v1").style.display = 'block';
                     d1.value = "1"
                     c1.value = 0;
                     break;
-                case 6: document.getElementById("bac2").style.display = 'none';
-                    document.getElementById("dNuoc2").style.display = 'block';
+                case 6: document.getElementById("h2").style.display = 'none';
+                    document.getElementById("v2").style.display = 'block';
                     d2.value = "2"
                     c2.value = 1;
                     break;
-                case 7: document.getElementById("bac3").style.display = 'none';
-                    document.getElementById("dNuoc3").style.display = 'block';
+                case 7: document.getElementById("h3").style.display = 'none';
+                    document.getElementById("v3").style.display = 'block';
                     d3.value = "3"
                     c3.value = 0;
                     break;
-                case 8: document.getElementById("bac4").style.display = 'none';
-                    document.getElementById("dNuoc4").style.display = 'block';
+                case 8: document.getElementById("h4").style.display = 'none';
+                    document.getElementById("v4").style.display = 'block';
                     d4.value = "4"
                     c4.value = 0;
                     break;

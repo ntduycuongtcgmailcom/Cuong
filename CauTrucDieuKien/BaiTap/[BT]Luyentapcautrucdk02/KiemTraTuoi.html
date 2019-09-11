@@ -8,15 +8,13 @@
 </head>
 <body>
 <script>
-    do {
-        a = prompt("Hay nhap vao chieu dai a:");
+    a= +prompt("Hay nhap vao tuoi cua mot nguoi");
+    if (a>0 &&a<120){
+        alert("Day la tuoi cua mot nguoi");
     }
-    while (isNaN(a) || a < 0);
-    do {
-        b = prompt("Hay nhap vao chieu rong b:");
+    else{
+        alert("Day khong phai la tuoi cua mot nguoi")
     }
-    while (isNaN(b) || b < 0); 
-    alert("Dien tich hinh chu nhat:dai"+a+" rong " +b+"="+a*b)   
-</script>
+</script>   
 </body>
 </html>
