@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/action_page.php">
+    Sở thích:<br />
+    <label><input name="hobby" value="Good" type="checkbox" id="good" onclick="changeValue(this.value)" width="100"
+        height="100" /> Good</label> <br />
+    <label><input name="hobby" value="Cheap" type="checkbox" id="cheap" onclick="changeValue(this.value)" />
+      Cheap</label> <br />
+    <label><input name="hobby" value="Fast" type="checkbox" id="fast" onclick="changeValue(this.value)"> Fast</label>
+    <br />
+  </form>
+  <script>
+    function changeValue(value) {
+      let good = document.getElementById("good");
+      let cheap = document.getElementById("cheap");
+      let fast = document.getElementById("fast");
+      switch (value) {
+        case 'Good':
+          //  debugger;
+          if (good.checked && fast.checked) {
+            cheap.checked = false;
+          }
+          break;
+        case 'Cheap':
+          if (cheap.checked && good.checked) {
+            fast.checked = false;
+          }
+          break;
+        case 'Fast':
+          if (cheap.checked && fast.checked) {
+            good.checked = false;
+          }
+          break;
+        default:
+          break;
+      }
+    }     
+  </script>
+</body>
+
+</html>

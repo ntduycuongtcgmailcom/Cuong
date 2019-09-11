@@ -8,14 +8,14 @@
 </head>
 <body>
     <script>
-        
-        // Khai báo một biến age (tuổi)
-        let age;
-        age=prompt("Nhap");
-        while(age !== "q"){
-          alert(age);
-          age=prompt("Nhap");
+        let a;
+        let sum=0;
+        while(a !== -1){
+             a=+prompt("Nhap gia tri");
+            document.write(+a+ "<br>");
+             sum=sum+a;
         }
+        alert("Tong la: "+sum)
     </script>
 </body>
 </html>

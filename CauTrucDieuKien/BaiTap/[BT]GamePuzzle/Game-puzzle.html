@@ -10,6 +10,14 @@
 
 <body>
     <p id="demo" style="position:absolute;left:500px; top:200px;"> </p>
+    <img id="bac1" src="H1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
+        onclick="myFun(5)">
+    <img id="bac2" src="H2.png" style="position:absolute;left:0; top:200px;" height="200px" width="500px"
+        onclick="myFun(6)">
+    <img id="bac3" src="H3.png" style="position:absolute;left:0; top:400px;" height="200px" width="500px"
+        onclick="myFun(7)">
+    <img id="bac4" src="H4.png" style="position:absolute;left:0; top:600px;" height="200px" width="500px"
+        onclick="myFun(8)">
     <img id="dNuoc1" src="V1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
         onclick="myFun(1)">
 
@@ -19,14 +27,6 @@
         onclick="myFun(3)">
     <img id="dNuoc4" src="V4.png " style="position:absolute;left:0; top:600px;" height="200px" width="500px"
         onclick="myFun(4)">
-    <img id="bac1" src="H1.png " style="position:absolute;left:0; top:0;" height="200px" width="500px"
-        onclick="myFun(5)">
-    <img id="bac2" src="H2.png" style="position:absolute;left:0; top:200px;" height="200px" width="500px"
-        onclick="myFun(6)">
-    <img id="bac3" src="H3.png" style="position:absolute;left:0; top:400px;" height="200px" width="500px"
-        onclick="myFun(7)">
-    <img id="bac4" src="H4.png" style="position:absolute;left:0; top:600px;" height="200px" width="500px"
-        onclick="myFun(8)">
     <script>
 
         let c1 = document.getElementById("dNuoc1")
@@ -84,7 +84,7 @@
 
             if ((c1.value + c2.value + c3.value + c4.value == "1234") || (d1.value + d2.value + d3.value + d4.value == "1234")) {
                 document.getElementById("demo").innerHTML = " CHUC MUNG BANx "
-               
+
             }
 
             else {
