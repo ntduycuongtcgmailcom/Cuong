@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = +prompt("Nhap n: ");
+        function checkPrime(num) {
+            if (num < 2)
+                return false;
+            else if (num == 2)
+                return true;
+            else
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i == 0) {
+                        return false;
+                    }
+                }
+            return true;
+        }
+        // console.log(checkPrime(n));
+
+        function getPrime() {
+            let count = 0;
+            let i = 2;
+            while (count < n) {
+                if (checkPrime(i)) {
+                    count++;
+                    document.write(i+" ");
+                }
+                i++;
+            }
+        }
+
+        getPrime();    
+    </script>
+</body>
+
+</html>

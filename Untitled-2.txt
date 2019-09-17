@@ -1,0 +1,18 @@
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (var element in array) {
+ console.log("element = " + array[element]);
+}
+
+
+for(var i = 0; i < numbers.length; i++){
+ console.log("element = " + numbers[i]);
+
+
+ var a = [33, 4, 1111, 222];
+a.sort(); // Alphabetical order: 1111, 222, 33, 4
+a.sort(function(a,b) { // Numerical order: 4, 33, 222, 1111
+ return a-b; // Returns &lt; 0, 0, or &gt; 0, depending on order
+});
+a.sort(function(a,b) { // Reverse numerical order
+ return b-a;
+});

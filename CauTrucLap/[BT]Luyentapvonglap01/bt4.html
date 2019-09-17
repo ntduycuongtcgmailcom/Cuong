@@ -1,0 +1,30 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fibonacci() {
+            let a = 0
+            let b = 1
+            let so_tiep_theo;
+            for (let i = 2; i > 0; i++) {
+                if ((so_tiep_theo % 4) === 0) alert(so_tiep_theo);
+                else {
+                    so_tiep_theo = a + b;
+                    a = b;
+                    b = so_tiep_theo;
+                }
+            }
+        }
+        fibonacci();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let matrix = [
+            ["1", "1", "4"],
+            ["1", "5", "2"]
+        ];
+        for (var i = 0; i < matrix.length; i++) {
+            for (var j = 0; j < matrix[i].length; j++) {
+                var i1 = (int)(Math.random() * matrix.length);
+                var j1 = (int)(Math.random() * matrix[i].length);
+                var temp = matrix[i][j];
+                matrix[i][j] = matrix[i1][j1];
+                matrix[i1][j1] = temp;
+            }
+        }
+        
+        alert(matrix);
+    </script>
+</body>
+
+</html>
